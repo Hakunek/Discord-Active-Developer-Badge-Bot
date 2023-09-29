@@ -1,16 +1,16 @@
 {
-  "name": "Discord-Active-Developer-Badge-Bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^14.6.0",
-    "dotenv": "^16.0.3"
-  }
+    "name": "discord-active-developer-badge-bot",
+    "version": "1.1.0",
+    "description": "Simple bot to get/keep the active developer badge",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^14.6.0",
+        "dotenv": "^16.0.3"
+    }
 }
