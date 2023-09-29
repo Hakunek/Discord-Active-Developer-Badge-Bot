@@ -3,6 +3,7 @@
     "version": "1.1.0",
     "description": "Simple bot to get/keep the active developer badge",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "start": "node ."
     },
