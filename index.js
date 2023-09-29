@@ -10,13 +10,12 @@ client.on("ready", async () => {
     await client.application.commands.set([{ name: "refresh", description: "You need to use this command at least once a month to keep the badge" }]);
 });
 
-client.on(
-    "interactionCreate",
-    async (interaction) =>
+client.on("interactionCreate", async (interaction) => {
+    if (interaction.type == InteractionType.ApplicationCommand)
         await interaction.reply({
             content: "Your DiscordActive Developer got refreshed - remember it takes up to 24h to have it appear, as Discord does verification once a day",
-            ephemeral: true,
-        })
-);
+            ephemeral: true
+        });
+});
 
 client.login(process.env.token);
