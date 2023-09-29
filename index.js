@@ -4,7 +4,7 @@ const client = new Client({ intents: 0 });
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 console.log(`Booting up`);
 client.on("ready", async () => {
-    await sleep(500);
+    while (!client.user || !client.application) await sleep(100);
 
     console.log(`${client.user.username}->${client.user.id}`);
     console.log(`Invite URL: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=applications.commands+bot&permissions=8`);
